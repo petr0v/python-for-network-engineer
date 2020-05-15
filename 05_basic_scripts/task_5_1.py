@@ -49,5 +49,5 @@ london_co = {
     }
 }
 
-print(london_co[name][parametr)
+print(london_co[name])
 
