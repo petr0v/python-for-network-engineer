@@ -39,9 +39,9 @@ Network:
 
 out_mask = """
 Mask
-{0}
+/{0}
 {1:<10}{2:<10}{3:<10}{4:<10}
 {1:8b}  {2:08b}  {3:08b}  {4:08b}
 """
 print(out.format(int(new_ip_network[0]),int(new_ip_network[1]),int(new_ip_network[2]),int(new_ip_network[3])))
-print(out_mask.format(prefix[-1].strip('1'), int(bin_mask[0:8],2), int(bin_mask[8:16],2), int(bin_mask[16:24],2), int(bin_mask[24:],2)))
+print(out_mask.format(new_ip[1], int(bin_mask[0:8],2), int(bin_mask[8:16],2), int(bin_mask[16:24],2), int(bin_mask[24:],2)))
