@@ -45,7 +45,6 @@ bin_ip = "00001010000000010000000111000011"
 network = input("Введите адрес сети в формате 10.1.1.10/24: ")
 new_ip = network.split('/')
 new_ip_network = new_ip[0].split('.')
-prefix = network.split('.')
 bin_mask = "1" * int(new_ip[1]) + "0" * (32-int(new_ip[1]))
 null_mask = "0" * (32-int(new_ip[1]))
 bin_ip_str = "{:08b}{:08b}{:08b}{:08b}".format(int(new_ip_network[0]),int(new_ip_network[1]),int(new_ip_network[2]),int(new_ip_network[3]))
